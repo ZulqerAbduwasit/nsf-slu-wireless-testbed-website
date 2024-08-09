@@ -5,12 +5,13 @@ import Footer from './components/Footer';
 import Home from './components/pages/Home';
 import Publications from './components/pages/Publications';
 import Team from './components/pages/Team';
+import ScrollToTop from "./ScrollToTop";
 import './App.css';
 
 function App() {
   return (
-    <>
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
@@ -19,7 +20,6 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-    </>
   );
 }
 
